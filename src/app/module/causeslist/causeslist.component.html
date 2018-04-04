@@ -1,0 +1,137 @@
+<div class="page-title">
+  <div class="container">
+      <h1>Causes List</h1>
+  </div>
+</div><!--end page title-->
+<div class="space-80"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="causes-list-box" *ngFor='let i of getallusers.data'> 
+                <div class="row vertical-center">
+                    <div class="col-sm-6">
+                        <img src="http://realestateforyou.in/admin/public/images/{{i.profile_pic}}" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-6" >
+                        <div class="causes-desc">
+                            <h4><a href="#">{{i.name}} chand</a></h4>
+                            <div class="progress clearfix">
+                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>                                  
+                            </div>
+                            <div class="row causes-amount">
+                                <div class="col-xs-6">
+                                    <span>Raised</span>
+                                    <h1> {{i}} </h1>
+                                </div>
+                                <div class="col-xs-6">
+                                    <span>Goal</span>
+                                    <h1></h1>
+                                </div>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, eu qui modo expeten dis reformidans, ex sit appetere sententiae.
+                            </p>
+                            <a href="" class="btn btn-theme-bg" routerLinkActive="active"  [routerLink]="['/comm-details', i.id]" (click)='myid(i.id)'>Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--causes box end-->
+           
+            <nav aria-label="Page navigation" class=" text-right">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md-3">
+            <div class="sidebar-widget search-widget">
+                <form>
+                    <input type="text" class="form-control" placeholder="Search here..">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div><!--end sidebar widget-->
+            <div class="sidebar-widget">
+                <h4 class="text-uppercase">Categories</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#">Poverty</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Water</a></li>
+                    <li><a href="#">Child</a></li>
+                    <li><a href="#">Africa</a></li>
+                    <li><a href="#">Nigeria</a></li>
+                    <li><a href="#">India</a></li>
+                </ul>
+            </div><!--end sidebar widget col-->
+            <div class="sidebar-widget">
+                <h4 class="text-uppercase">Categories</h4>
+                <ul class="list-inline tags">
+                    <li><a href="#">Poverty</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Water</a></li>
+                    <li><a href="#">Child</a></li>
+                    <li><a href="#">Africa</a></li>
+                    <li><a href="#">Nigeria</a></li>
+                    <li><a href="#">India</a></li>
+                </ul>
+            </div><!--end sidebar widget-->
+            <div class="sidebar-widget">
+                <h4 class="text-uppercase">Latest Post</h4>
+                <ul class="list-unstyled latest-news">
+                    <li class="clearfix">
+                        <div class="pull-left post-thumb">
+                            <a href="#">
+                                <img src="../assets/images/img1.jpg" alt="" class="img-responsive" width="90">
+                            </a>
+                        </div><!--thumb-->
+                        <div class="content">
+                            <a href="#">
+                                <h5>African child education help</h5>                          
+                            </a>
+                            <div>
+                                <span>18 July 2016</span>                                      
+                            </div>
+                        </div>
+                    </li><!--news li end-->
+                    <li class="clearfix">
+                        <div class="pull-left post-thumb">
+                            <a href="#">
+                                <img src="../assets/images/img2.jpg" alt="" class="img-responsive" width="90">
+                            </a>
+                        </div><!--thumb-->
+                        <div class="content">
+                            <a href="#">
+                                <h5>Save the life of poor childs</h5>                          
+                            </a>
+                            <div>
+                                <span>18 July 2016</span>
+
+                            </div>
+
+                        </div>
+                    </li><!--news li end-->
+                </ul>
+            </div><!--end sidebar widget -->
+            <div class="sidebar-widget text-center">
+                <h4 class="text-uppercase">Become a volunteer</h4>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse.
+                </p>
+                <a href="#" class="btn btn-lg btn-theme-bg">Join Us</a>
+            </div><!--end sidebar widget col-->
+        </div><!--end sidebar col-->
+    </div>
+</div>
+<div class="space-80"></div>
+<div class="white-bg pd-t-80 pd-b-30">
